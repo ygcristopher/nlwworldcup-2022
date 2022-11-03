@@ -1,6 +1,6 @@
 function createGame(player1, hour, player2, group){
   return `
-  <li>
+  <li> 
          <div>
            <p class="group">Grupo ${group}</p>
            </div>
