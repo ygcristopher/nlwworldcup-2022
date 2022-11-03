@@ -61,7 +61,7 @@ document.querySelector("#cards").innerHTML = `
               createGame("Marrocos", "07:00", "Croácia", "F") +
                 createGame("Alemanha", "10:00", "Japão", "E") +
                 createGame("Espanha", "13:00", "Costa Rica", "E") +
-                createGame("Bélgica", "16:00", "Canadá", "F")
+                createGame("Belgica", "16:00", "Canadá", "F")
             )}
             ${createCard(
               "24/11",
@@ -91,7 +91,7 @@ document.querySelector("#cards").innerHTML = `
              "27/11",
              "DOMINGO",
              createGame("Japão", "07:00", "Costa Rica", "E") +
-               createGame("Bélgica", "10:00", "Marrocos", "F") +
+               createGame("Belgica", "10:00", "Marrocos", "F") +
                createGame("Croácia", "13:00", "Canadá", "F") +
                createGame("Espanha", "16:00", "Alemanha", "E")
            )}
@@ -135,12 +135,10 @@ document.querySelector("#cards").innerHTML = `
                 createGame("Sérvia", "13:00", "Suiça", "G") +
                 createGame("Camarões", "16:00", "Brazil", "G")
             )}
-            
-
-                               
-             
-          
+       
 `
+
+
 
 
 
