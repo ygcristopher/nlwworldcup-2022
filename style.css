@@ -10,7 +10,7 @@
 .team-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: center;
   max-width: 63px;
   color: white;
@@ -77,12 +77,42 @@ header {
   
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
  #cards {
+  max-width: 670px;
   flex-direction: column;
  }
 }
 
+.card h2:hover,
+.card ul li strong:hover,
+.card ul li img:hover{
+  transform: scale(1.1);
+}
+
+.card h2,
+.card ul li strong,
+.card ul li img {
+  transition: transform 0.3s;
+}
+
+
+.card {
+  opacity: 0;
+  animation:appear .2s forwards;
+  
+}
+
+@keyframes appear {
+  0% {
+  transform: translateY(-50px);
+  opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
 
 .card:hover {
   transform: scale(105%);
@@ -94,7 +124,7 @@ header {
   text-align: center;
 
   background-color: #1D1C19;
-  border-bottom: 2px solid #F7DD43;
+  border-bottom: 2px solid #43f743;
   border-radius: 6px;
 
 }
@@ -106,7 +136,7 @@ header {
   align-items: center;
 
   padding: 8px 16px;
-  border: 1px solid #746615;
+  border: 1px solid green;
   border-radius: 6px;
 
   width: fit-content;
@@ -132,11 +162,6 @@ header {
 .card ul li img {
  margin-bottom: 12px;
  
-}
-
-.card ul li img:hover{
-  transform: scale(120%);
-
 }
 
 .card ul li {
