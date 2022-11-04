@@ -97,7 +97,7 @@ document.querySelector("#cards").innerHTML = `
            )}
             ${createCard(
               "28/11",
-              "DOMINGO",
+              "SEGUNDA",
               createGame("Camarões", "07:00", "Sérvia", "G") +
                 createGame("Coreia do Sul", "10:00", "Gana", "H") +
                 createGame("Brazil", "13:00", "Suiça", "G") +
@@ -105,7 +105,7 @@ document.querySelector("#cards").innerHTML = `
             )}
             ${createCard(
               "29/11",
-              "SEGUNDA",
+              "TERÇA",
               createGame("Equador", "07:00", "Senegal", "A") +
                 createGame("Holanda", "10:00", "Catar", "A") +
                 createGame("Irã", "13:00", "Estados Unidos", "B") +
@@ -113,7 +113,7 @@ document.querySelector("#cards").innerHTML = `
             )}
             ${createCard(
               "30/11",
-              "TERÇA",
+              "QUARTA",
               createGame("Tunisia", "07:00", "França", "D") +
                 createGame("Australia", "10:00", "Dinamarca", "D") +
                 createGame("Polonia", "13:00", "Argentina", "B") +
@@ -121,7 +121,7 @@ document.querySelector("#cards").innerHTML = `
             )}
             ${createCard(
               "01/12",
-              "QUARTA",
+              "QUINTA",
               createGame("Croácia", "07:00", "Belgica", "F") +
                 createGame("Canadá", "10:00", "Marrocos", "F") +
                 createGame("Japão", "13:00", "Espanha", "E") +
@@ -129,7 +129,7 @@ document.querySelector("#cards").innerHTML = `
             )}
             ${createCard(
               "02/11",
-              "QUINTA",
+              "SEXTA",
               createGame("Coreia do Sul", "07:00", "Portugal", "H") +
                 createGame("Gana", "10:00", "Uruguai", "H") +
                 createGame("Sérvia", "13:00", "Suiça", "G") +
