@@ -1,11 +1,91 @@
 *{
   margin: 0;
   padding: 0;
-  
-  transition: all ease-in-out 0.2s;
+  box-sizing: border-box;
+  /* transition: all ease-in-out 0.2s; */
   
    /* border: 1px dashed transparent;  */
 }
+
+
+/* .fases{
+    
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+} */
+
+.alarm-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 38%;
+  right: 8%;
+  border-radius: 10px;
+  background: #1D1C19;
+
+  gap: 15px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4px 55px;
+  border-radius: 7px;
+
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 53px;
+  color: rgb(245, 245, 245);
+
+  
+  flex-direction: row;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+ .alarm-container h1{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 30px 0;
+    border-radius: 5px;
+    padding: 1px;
+    color: rgb(245, 245, 245);
+ 
+ }
+
+ .alarm-container button {
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 118px;
+  align-items: center;
+  display: flex;
+}
+
+.alarm-controls select option{
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 150px;
+}
+
+
+ .alarm-controls{
+    display: grid;
+    align-items:center;
+    
+   
+    border-radius: 5px;
+    border: 1px solid rgb(245, 245, 245);
+    width: 100%;
+    
+    margin: 6px;
+    
+} 
 
 .team-container {
   display: flex;
@@ -21,28 +101,13 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-p {
-  text-align: center;
-  
-}
-
-.group{
-   color: white;
-  width: fit-content;
-  margin-inline: auto;
-  margin-bottom: 8px;
-
-  padding: 7px 8px;
-  border: 1px solid yellow;
-  border-radius: 6px;
 
 }
 
-html {
- height: 100vh;
- width: 100vw;
+
+body {
+  height: 100vh;
+  width: 100vw;
   
   background-color: #121214;
   background-image: url(./assets/bg.svg);
@@ -50,13 +115,13 @@ html {
   background-repeat: no-repeat;
   background-position: center;
 
+  overflow-x: hidden;
 }
 
 body * {
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   text-transform: uppercase;
-  
 }
 
 #app {
@@ -67,7 +132,7 @@ body * {
 
 header {
   text-align: center;
-  margin-bottom: 63px;
+  margin-bottom: 60px;
 }
 
 #cards {
@@ -77,15 +142,14 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  
-  
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
  #cards {
   max-width: 670px;
   flex-direction: column;
  }
+
 }
 
 .card h2:hover,
@@ -109,7 +173,7 @@ header {
 
 @keyframes appear {
   0% {
-  transform: translateY(-50px);
+  transform: translateX(-50px);
   opacity: 0;
   }
 
@@ -146,7 +210,7 @@ header {
   margin-inline: auto;
   margin-bottom: 53px;
 
-  color: #F7DD43;
+  color: #f7dd43;
 }
 
 .card h2 span {
@@ -163,8 +227,7 @@ header {
 }
 
 .card ul li img {
- margin-bottom: 18px;
- align-items: center;
+ margin-bottom: 12px;
  
 }
 
@@ -173,7 +236,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  
+  color: white; 
 }
 
 .card ul li + li {
@@ -189,19 +252,28 @@ line-height: 150%;
 color: white;
 }
 
+/*BARRA DE ROLAGEM*/
+
+::-webkit-scrollbar-track{
+  background-color: #232c3b;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+  background: #F4F4F4;
+}
+
+::-webkit-scrollbar-thumb{
+ background: #0cdd5c ;
+ border-radius: 15px;
+}
+
 footer h4{
-  color: white;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+align-items: center;
+display: flex;
+flex-direction: column;
 
+font-size: 15px;
 
-  margin-inline: auto;
-  margin-bottom: 8px;
-  padding: 7px 8px;
-
-  background-color: #323238;
-  border: 1px solid yellow;
-  border-radius: 6px;
-  font-size: 20px;
+color: white;
 }
