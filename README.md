@@ -35,7 +35,7 @@ O Calendário da Copa é um projeto que mostra os horários dos jogos, que vão 
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://nlwworldcup.netlify.app/). Não é necessário ter conta no [SITE](https://nlwworldcup.netlify.app/) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://nlwworldcup-2022.netlify.app/). Não é necessário ter conta no [SITE](https://nlwworldcup.netlify.app/) para acessá-lo.
 
 ## :memo: Licença
 
